@@ -1,0 +1,1292 @@
+[
+  {
+    "id": "scam_tech_042",
+    "label": "scam",
+    "category": "tech_support",
+    "transcript": "Scammer: Hello sir, this is calling from Airtel technical department.\nVictim: Yes, tell me.\nScammer: Sir, your mobile number will be disconnected in 1 hour due to KYC issues.\nVictim: But I did my KYC recently.\nScammer: Sir, there is a problem with your documents. To avoid disconnection, you need to download a verification app.\nVictim: Which app?\nScammer: Sir, I will send you a link. Download the app and allow all permissions. It will verify your identity.\nVictim: Okay, I downloaded it.\nScammer: Good sir. Now the app needs access to your SMS to verify OTP. Allow it. Also, your screen will be shared with our server for verification.",
+    "scam_type": "Tech Support Scam",
+    "indicators": [
+      "remote_access_request",
+      "virus_threat",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "legit_011",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is calling from Airtel.\nVictim: Yes, tell me.\nCaller: Sir, your postpaid bill of 899 rupees is due. Please pay by 5th of this month to avoid late charges.\nVictim: Okay, I will pay today.\nCaller: Thank you sir. You can pay through Airtel Thanks app or any UPI app.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_kyc_045",
+    "label": "scam",
+    "category": "kyc_fraud",
+    "transcript": "Scammer: Hello, is this Priya Singh?\nVictim: Yes, speaking.\nScammer: Sir, I am calling from RBI cyber security department. There are suspicious transactions from your account.\nVictim: What transactions? I didn't do anything.\nScammer: Sir, someone is trying to transfer 50,000 rupees from your account. To stop this, you need to verify your identity immediately.\nVictim: How do I verify?\nScammer: Sir, please tell me your account number and ATM PIN so I can block the transaction.\nVictim: You want my PIN? That's not right.\nScammer: Sir, I am from RBI. This is official procedure. Give me quickly before money is gone!",
+    "scam_type": "KYC Verification Fraud",
+    "indicators": [
+      "urgent_kyc",
+      "account_freeze_threat",
+      "request_sensitive_info",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "ICICI Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_034",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi, is this Deepak Mishra?\nVictim: Yes, who is this?\nCaller: Sir, this is Amit from Amazon. Your order for the mobile phone has been shipped. Tracking ID is 123456789.\nVictim: Okay, when will it arrive?\nCaller: Expected delivery is day after tomorrow. You'll receive updates via SMS.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_lottery_033",
+    "label": "scam",
+    "category": "lottery_scam",
+    "transcript": "Scammer: Congratulations! Am I speaking with Manoj Joshi?\nVictim: Yes, who is this?\nScammer: Sir, I am calling from Kaun Banega Crorepati head office. You have won 25 lakh rupees in lucky draw!\nVictim: Really? I didn't participate in any draw.\nScammer: Sir, your mobile number was randomly selected from all Airtel users. This is your lucky day!\nVictim: That's amazing! How do I claim?\nScammer: Sir, to claim your prize, you need to pay a processing fee of 15,000 rupees first.\nVictim: Why do I need to pay?\nScammer: Sir, this is for GST and transfer charges. Once paid, the 25 lakhs will be transferred to your account within 2 hours.\nVictim: Okay, where should I send?\nScammer: Sir, send through UPI to this ID: kbcprize@paytm. Hurry, offer expires today!",
+    "scam_type": "Lottery/Prize Scam",
+    "indicators": [
+      "prize_offer",
+      "processing_fee",
+      "urgent",
+      "too_good_to_be_true"
+    ],
+    "entities": {
+      "upi_ids": [
+        "kbcprize@paytm",
+        "amazonprizes@ybl"
+      ]
+    }
+  },
+  {
+    "id": "legit_001",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, am I speaking with Kiran Rao?\nVictim: Yes, tell me.\nCaller: Sir, this is Dr. Sharma's clinic. Your appointment is confirmed for tomorrow at 3 PM.\nVictim: Okay, I will be there.\nCaller: Thank you sir. Please bring your previous reports.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_037",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi Manoj Joshi, this is Priya from your child's school.\nVictim: Yes, tell me.\nCaller: Sir, just reminding you that parent-teacher meeting is on Saturday at 10 AM.\nVictim: Okay, I will be there.\nCaller: Thank you sir.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_police_041",
+    "label": "scam",
+    "category": "police_impersonation",
+    "transcript": "Scammer: Hello, is this Manoj Joshi?\nVictim: Yes, who is this?\nScammer: This is Inspector Sharma from Mumbai Cyber Crime Branch. There is a serious matter regarding your name.\nVictim: What matter? I haven't done anything wrong.\nScammer: Sir, we have found a parcel in your name containing illegal drugs and fake passports. This is a very serious offense.\nVictim: What? I didn't send any parcel!\nScammer: Sir, the parcel was sent from Mumbai to Thailand using your Aadhaar and PAN card copies. You are the main suspect.\nVictim: This is a mistake! I am innocent!\nScammer: Sir, an arrest warrant has been issued in your name. You will be arrested within 2 hours unless you cooperate.\nVictim: Please, what should I do?\nScammer: Sir, you need to pay a security deposit of 2 lakhs to the court to stop the arrest warrant. Pay immediately through UPI.\nVictim: 2 lakhs? I don't have that much.\nScammer: Sir, this is your only chance. Pay now or go to jail for 10 years!",
+    "scam_type": "Police/Authority Impersonation",
+    "indicators": [
+      "impersonation",
+      "arrest_threat",
+      "drug_case",
+      "demand_money",
+      "urgent"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "legit_045",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi Pooja Shah, this is Priya from your child's school.\nVictim: Yes, tell me.\nCaller: Sir, just reminding you that parent-teacher meeting is on Saturday at 10 AM.\nVictim: Okay, I will be there.\nCaller: Thank you sir.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_tech_027",
+    "label": "scam",
+    "category": "tech_support",
+    "transcript": "Scammer: Hello sir, this is calling from Airtel technical department.\nVictim: Yes, tell me.\nScammer: Sir, your mobile number will be disconnected in 1 hour due to KYC issues.\nVictim: But I did my KYC recently.\nScammer: Sir, there is a problem with your documents. To avoid disconnection, you need to download a verification app.\nVictim: Which app?\nScammer: Sir, I will send you a link. Download the app and allow all permissions. It will verify your identity.\nVictim: Okay, I downloaded it.\nScammer: Good sir. Now the app needs access to your SMS to verify OTP. Allow it. Also, your screen will be shared with our server for verification.",
+    "scam_type": "Tech Support Scam",
+    "indicators": [
+      "remote_access_request",
+      "virus_threat",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "legit_007",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is Vijay from Urban Company.\nVictim: Yes, tell me.\nCaller: Sir, your AC service appointment is confirmed for tomorrow between 2-4 PM.\nVictim: Okay, please come on time.\nCaller: Sure sir. Our technician will call you 30 minutes before arrival.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_010",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi, is this Amit Sharma?\nVictim: Yes, who is this?\nCaller: Sir, this is Amit from Amazon. Your order for the mobile phone has been shipped. Tracking ID is 123456789.\nVictim: Okay, when will it arrive?\nCaller: Expected delivery is day after tomorrow. You'll receive updates via SMS.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_kyc_025",
+    "label": "scam",
+    "category": "kyc_fraud",
+    "transcript": "Scammer: Sir, this is an urgent call regarding your HDFC Bank account.\nScammer: Sir, your KYC verification has expired and your account will be frozen within 24 hours.\nVictim: What? I don't remember any KYC expiry.\nScammer: Yes sir, RBI has made new rules. You need to update immediately or your account will be blocked.\nVictim: Okay, what do I need to do?\nScammer: Sir, I will send you a link. You need to fill in your account details, ATM card number, CVV, and OTP that you will receive.\nVictim: Why do you need my ATM details?\nScammer: Sir, this is for verification purpose only. RBI mandate hai. Your account will be unblocked immediately.\nVictim: I am not comfortable sharing this.\nScammer: Sir, this is very urgent. If you don't do this now, your account will be permanently frozen and legal action will be taken.",
+    "scam_type": "KYC Verification Fraud",
+    "indicators": [
+      "urgent_kyc",
+      "account_freeze_threat",
+      "request_sensitive_info",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "HDFC Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_016",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Anita Desai?\nVictim: Yes, speaking.\nCaller: Sir, this is Raj from Swiggy. Your order for biryani has been confirmed. Delivery in 30 minutes.\nVictim: Okay, thank you.\nCaller: You're welcome sir. Have a good day!",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_013",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi Priya Singh, this is Priya from your child's school.\nVictim: Yes, tell me.\nCaller: Sir, just reminding you that parent-teacher meeting is on Saturday at 10 AM.\nVictim: Okay, I will be there.\nCaller: Thank you sir.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_002",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi, is this Vikram Reddy?\nVictim: Yes, who is this?\nCaller: Sir, this is Amit from Amazon. Your order for the mobile phone has been shipped. Tracking ID is 123456789.\nVictim: Okay, when will it arrive?\nCaller: Expected delivery is day after tomorrow. You'll receive updates via SMS.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_008",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Lakshmi Iyer?\nVictim: Yes, speaking.\nCaller: Sir, this is Raj from Swiggy. Your order for biryani has been confirmed. Delivery in 30 minutes.\nVictim: Okay, thank you.\nCaller: You're welcome sir. Have a good day!",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_003",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is calling from Airtel.\nVictim: Yes, tell me.\nCaller: Sir, your postpaid bill of 899 rupees is due. Please pay by 5th of this month to avoid late charges.\nVictim: Okay, I will pay today.\nCaller: Thank you sir. You can pay through Airtel Thanks app or any UPI app.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_031",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is Vijay from Urban Company.\nVictim: Yes, tell me.\nCaller: Sir, your AC service appointment is confirmed for tomorrow between 2-4 PM.\nVictim: Okay, please come on time.\nCaller: Sure sir. Our technician will call you 30 minutes before arrival.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_kyc_040",
+    "label": "scam",
+    "category": "kyc_fraud",
+    "transcript": "Scammer: Good morning sir, this is Rahul calling from ICICI Bank head office.\nScammer: Sir, your KYC verification has expired and your account will be frozen within 24 hours.\nVictim: What? I don't remember any KYC expiry.\nScammer: Yes sir, RBI has made new rules. You need to update immediately or your account will be blocked.\nVictim: Okay, what do I need to do?\nScammer: Sir, I will send you a link. You need to fill in your account details, ATM card number, CVV, and OTP that you will receive.\nVictim: Why do you need my ATM details?\nScammer: Sir, this is for verification purpose only. RBI mandate hai. Your account will be unblocked immediately.\nVictim: I am not comfortable sharing this.\nScammer: Sir, this is very urgent. If you don't do this now, your account will be permanently frozen and legal action will be taken.",
+    "scam_type": "KYC Verification Fraud",
+    "indicators": [
+      "urgent_kyc",
+      "account_freeze_threat",
+      "request_sensitive_info",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "ICICI Bank"
+      ]
+    }
+  },
+  {
+    "id": "scam_bank_029",
+    "label": "scam",
+    "category": "bank_fraud",
+    "transcript": "Scammer: Sir, this is Punjab National Bank customer care. Your account has been flagged for unusual transactions.\nVictim: What transactions?\nScammer: Sir, 50,000 rupees was transferred to an unknown account 10 minutes ago. Did you authorize this?\nVictim: No! I didn't do any transfer!\nScammer: Sir, then this is fraud. To reverse the transaction, I need your UPI PIN and the OTP you will receive.\nVictim: You need my UPI PIN?\nScammer: Yes sir, this is to verify the reversal request. Without this, we cannot get your money back. Hurry, before it's too late!",
+    "scam_type": "Bank Fraud Scam",
+    "indicators": [
+      "suspicious_activity",
+      "request_otp",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Punjab National Bank"
+      ]
+    }
+  },
+  {
+    "id": "scam_lottery_028",
+    "label": "scam",
+    "category": "lottery_scam",
+    "transcript": "Scammer: Hello, congratulations from Amazon India!\nVictim: What is this about?\nScammer: Sir, you have won an iPhone 15 Pro Max in our customer appreciation lucky draw!\nVictim: I didn't enter any draw.\nScammer: Sir, as a regular Amazon customer, you were automatically entered. You are one of 10 lucky winners!\nVictim: Great! When will I get it?\nScammer: Sir, to process your prize, we need a refundable security deposit of 5,000 rupees. This will be returned with your prize.\nVictim: Okay, how do I pay?\nScammer: Sir, pay to amazonprizes@ybl through PhonePe or Google Pay. Send screenshot after payment.",
+    "scam_type": "Lottery/Prize Scam",
+    "indicators": [
+      "prize_offer",
+      "processing_fee",
+      "urgent",
+      "too_good_to_be_true"
+    ],
+    "entities": {
+      "upi_ids": [
+        "kbcprize@paytm",
+        "amazonprizes@ybl"
+      ]
+    }
+  },
+  {
+    "id": "legit_005",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi Geeta Menon, this is Priya from your child's school.\nVictim: Yes, tell me.\nCaller: Sir, just reminding you that parent-teacher meeting is on Saturday at 10 AM.\nVictim: Okay, I will be there.\nCaller: Thank you sir.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_bank_049",
+    "label": "scam",
+    "category": "bank_fraud",
+    "transcript": "Scammer: Sir, this is Axis Bank customer care. Your account has been flagged for unusual transactions.\nVictim: What transactions?\nScammer: Sir, 50,000 rupees was transferred to an unknown account 10 minutes ago. Did you authorize this?\nVictim: No! I didn't do any transfer!\nScammer: Sir, then this is fraud. To reverse the transaction, I need your UPI PIN and the OTP you will receive.\nVictim: You need my UPI PIN?\nScammer: Yes sir, this is to verify the reversal request. Without this, we cannot get your money back. Hurry, before it's too late!",
+    "scam_type": "Bank Fraud Scam",
+    "indicators": [
+      "suspicious_activity",
+      "request_otp",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Axis Bank"
+      ]
+    }
+  },
+  {
+    "id": "scam_bank_014",
+    "label": "scam",
+    "category": "bank_fraud",
+    "transcript": "Scammer: Sir, this is Kotak Mahindra Bank customer care. Your account has been flagged for unusual transactions.\nVictim: What transactions?\nScammer: Sir, 50,000 rupees was transferred to an unknown account 10 minutes ago. Did you authorize this?\nVictim: No! I didn't do any transfer!\nScammer: Sir, then this is fraud. To reverse the transaction, I need your UPI PIN and the OTP you will receive.\nVictim: You need my UPI PIN?\nScammer: Yes sir, this is to verify the reversal request. Without this, we cannot get your money back. Hurry, before it's too late!",
+    "scam_type": "Bank Fraud Scam",
+    "indicators": [
+      "suspicious_activity",
+      "request_otp",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Kotak Mahindra Bank"
+      ]
+    }
+  },
+  {
+    "id": "scam_tech_002",
+    "label": "scam",
+    "category": "tech_support",
+    "transcript": "Scammer: Hello, this is Microsoft Technical Support. Am I speaking with Amit Sharma?\nVictim: Yes, what is this about?\nScammer: Sir, we have detected a virus on your computer that is stealing your banking information.\nVictim: Oh no! How did this happen?\nScammer: Sir, hackers have accessed your system. We need to fix this immediately or you will lose all your money.\nVictim: Please help me!\nScammer: Sir, I need you to install AnyDesk so I can access your computer and remove the virus.\nVictim: Okay, I will install it.\nScammer: Good. Once installed, give me the access code. Also, keep your ATM card ready for verification.\nVictim: Why do you need my ATM card?\nScammer: Sir, this is to verify your identity with the bank. We need to make sure the virus hasn't stolen your money.",
+    "scam_type": "Tech Support Scam",
+    "indicators": [
+      "remote_access_request",
+      "virus_threat",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "legit_009",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, am I speaking with Deepak Mishra?\nVictim: Yes, tell me.\nCaller: Sir, this is Dr. Sharma's clinic. Your appointment is confirmed for tomorrow at 3 PM.\nVictim: Okay, I will be there.\nCaller: Thank you sir. Please bring your previous reports.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_lottery_038",
+    "label": "scam",
+    "category": "lottery_scam",
+    "transcript": "Scammer: Hello, congratulations from Amazon India!\nVictim: What is this about?\nScammer: Sir, you have won an iPhone 15 Pro Max in our customer appreciation lucky draw!\nVictim: I didn't enter any draw.\nScammer: Sir, as a regular Amazon customer, you were automatically entered. You are one of 10 lucky winners!\nVictim: Great! When will I get it?\nScammer: Sir, to process your prize, we need a refundable security deposit of 5,000 rupees. This will be returned with your prize.\nVictim: Okay, how do I pay?\nScammer: Sir, pay to amazonprizes@ybl through PhonePe or Google Pay. Send screenshot after payment.",
+    "scam_type": "Lottery/Prize Scam",
+    "indicators": [
+      "prize_offer",
+      "processing_fee",
+      "urgent",
+      "too_good_to_be_true"
+    ],
+    "entities": {
+      "upi_ids": [
+        "kbcprize@paytm",
+        "amazonprizes@ybl"
+      ]
+    }
+  },
+  {
+    "id": "legit_021",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi Sunita Verma, this is Priya from your child's school.\nVictim: Yes, tell me.\nCaller: Sir, just reminding you that parent-teacher meeting is on Saturday at 10 AM.\nVictim: Okay, I will be there.\nCaller: Thank you sir.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_bank_024",
+    "label": "scam",
+    "category": "bank_fraud",
+    "transcript": "Scammer: Hello, am I speaking with Suresh Patel?\nVictim: Yes, who is this?\nScammer: Sir, I am calling from Kotak Mahindra Bank fraud department. There is suspicious activity on your account.\nVictim: What kind of activity?\nScammer: Sir, someone tried to withdraw 1 lakh rupees from your account using net banking. The transaction was blocked.\nVictim: Thank god! What should I do?\nScammer: Sir, to secure your account, I need to verify your details. Please tell me your debit card number and expiry date.\nVictim: Why do you need that?\nScammer: Sir, this is to verify you are the real account holder. Also, you will receive an OTP - tell me that as well.\nVictim: I am not comfortable sharing OTP.\nScammer: Sir, if you don't verify now, the hackers will try again and your money will be gone! This is urgent!",
+    "scam_type": "Bank Fraud Scam",
+    "indicators": [
+      "suspicious_activity",
+      "request_otp",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Kotak Mahindra Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_022",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Sanjay Khanna?\nVictim: Yes.\nCaller: Sir, this is your cab driver. I have reached your pickup location.\nVictim: Okay, I am coming down in 2 minutes.\nCaller: Sure sir, I am waiting. White Swift, number DL 01 AB 1234.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_lottery_008",
+    "label": "scam",
+    "category": "lottery_scam",
+    "transcript": "Scammer: Hello, congratulations from Amazon India!\nVictim: What is this about?\nScammer: Sir, you have won an iPhone 15 Pro Max in our customer appreciation lucky draw!\nVictim: I didn't enter any draw.\nScammer: Sir, as a regular Amazon customer, you were automatically entered. You are one of 10 lucky winners!\nVictim: Great! When will I get it?\nScammer: Sir, to process your prize, we need a refundable security deposit of 5,000 rupees. This will be returned with your prize.\nVictim: Okay, how do I pay?\nScammer: Sir, pay to amazonprizes@ybl through PhonePe or Google Pay. Send screenshot after payment.",
+    "scam_type": "Lottery/Prize Scam",
+    "indicators": [
+      "prize_offer",
+      "processing_fee",
+      "urgent",
+      "too_good_to_be_true"
+    ],
+    "entities": {
+      "upi_ids": [
+        "kbcprize@paytm",
+        "amazonprizes@ybl"
+      ]
+    }
+  },
+  {
+    "id": "scam_kyc_030",
+    "label": "scam",
+    "category": "kyc_fraud",
+    "transcript": "Scammer: Hello, is this Geeta Menon?\nVictim: Yes, speaking.\nScammer: Sir, I am calling from RBI cyber security department. There are suspicious transactions from your account.\nVictim: What transactions? I didn't do anything.\nScammer: Sir, someone is trying to transfer 50,000 rupees from your account. To stop this, you need to verify your identity immediately.\nVictim: How do I verify?\nScammer: Sir, please tell me your account number and ATM PIN so I can block the transaction.\nVictim: You want my PIN? That's not right.\nScammer: Sir, I am from RBI. This is official procedure. Give me quickly before money is gone!",
+    "scam_type": "KYC Verification Fraud",
+    "indicators": [
+      "urgent_kyc",
+      "account_freeze_threat",
+      "request_sensitive_info",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Punjab National Bank"
+      ]
+    }
+  },
+  {
+    "id": "scam_tech_037",
+    "label": "scam",
+    "category": "tech_support",
+    "transcript": "Scammer: Hello, this is Microsoft Technical Support. Am I speaking with Sunita Verma?\nVictim: Yes, what is this about?\nScammer: Sir, we have detected a virus on your computer that is stealing your banking information.\nVictim: Oh no! How did this happen?\nScammer: Sir, hackers have accessed your system. We need to fix this immediately or you will lose all your money.\nVictim: Please help me!\nScammer: Sir, I need you to install AnyDesk so I can access your computer and remove the virus.\nVictim: Okay, I will install it.\nScammer: Good. Once installed, give me the access code. Also, keep your ATM card ready for verification.\nVictim: Why do you need my ATM card?\nScammer: Sir, this is to verify your identity with the bank. We need to make sure the virus hasn't stolen your money.",
+    "scam_type": "Tech Support Scam",
+    "indicators": [
+      "remote_access_request",
+      "virus_threat",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "scam_police_011",
+    "label": "scam",
+    "category": "police_impersonation",
+    "transcript": "Scammer: Hello, is this Amit Sharma?\nVictim: Yes, who is this?\nScammer: This is Inspector Sharma from Mumbai Cyber Crime Branch. There is a serious matter regarding your name.\nVictim: What matter? I haven't done anything wrong.\nScammer: Sir, we have found a parcel in your name containing illegal drugs and fake passports. This is a very serious offense.\nVictim: What? I didn't send any parcel!\nScammer: Sir, the parcel was sent from Mumbai to Thailand using your Aadhaar and PAN card copies. You are the main suspect.\nVictim: This is a mistake! I am innocent!\nScammer: Sir, an arrest warrant has been issued in your name. You will be arrested within 2 hours unless you cooperate.\nVictim: Please, what should I do?\nScammer: Sir, you need to pay a security deposit of 2 lakhs to the court to stop the arrest warrant. Pay immediately through UPI.\nVictim: 2 lakhs? I don't have that much.\nScammer: Sir, this is your only chance. Pay now or go to jail for 10 years!",
+    "scam_type": "Police/Authority Impersonation",
+    "indicators": [
+      "impersonation",
+      "arrest_threat",
+      "drug_case",
+      "demand_money",
+      "urgent"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "legit_048",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Amit Sharma?\nVictim: Yes, speaking.\nCaller: Sir, this is Raj from Swiggy. Your order for biryani has been confirmed. Delivery in 30 minutes.\nVictim: Okay, thank you.\nCaller: You're welcome sir. Have a good day!",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_tech_017",
+    "label": "scam",
+    "category": "tech_support",
+    "transcript": "Scammer: Hello, this is Microsoft Technical Support. Am I speaking with Suresh Patel?\nVictim: Yes, what is this about?\nScammer: Sir, we have detected a virus on your computer that is stealing your banking information.\nVictim: Oh no! How did this happen?\nScammer: Sir, hackers have accessed your system. We need to fix this immediately or you will lose all your money.\nVictim: Please help me!\nScammer: Sir, I need you to install AnyDesk so I can access your computer and remove the virus.\nVictim: Okay, I will install it.\nScammer: Good. Once installed, give me the access code. Also, keep your ATM card ready for verification.\nVictim: Why do you need my ATM card?\nScammer: Sir, this is to verify your identity with the bank. We need to make sure the virus hasn't stolen your money.",
+    "scam_type": "Tech Support Scam",
+    "indicators": [
+      "remote_access_request",
+      "virus_threat",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "scam_kyc_035",
+    "label": "scam",
+    "category": "kyc_fraud",
+    "transcript": "Scammer: Hello, is this Manoj Joshi?\nVictim: Yes, speaking.\nScammer: Sir, I am calling from RBI cyber security department. There are suspicious transactions from your account.\nVictim: What transactions? I didn't do anything.\nScammer: Sir, someone is trying to transfer 50,000 rupees from your account. To stop this, you need to verify your identity immediately.\nVictim: How do I verify?\nScammer: Sir, please tell me your account number and ATM PIN so I can block the transaction.\nVictim: You want my PIN? That's not right.\nScammer: Sir, I am from RBI. This is official procedure. Give me quickly before money is gone!",
+    "scam_type": "KYC Verification Fraud",
+    "indicators": [
+      "urgent_kyc",
+      "account_freeze_threat",
+      "request_sensitive_info",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "IndusInd Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_049",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, am I speaking with Deepak Mishra?\nVictim: Yes, tell me.\nCaller: Sir, this is Dr. Sharma's clinic. Your appointment is confirmed for tomorrow at 3 PM.\nVictim: Okay, I will be there.\nCaller: Thank you sir. Please bring your previous reports.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_kyc_015",
+    "label": "scam",
+    "category": "kyc_fraud",
+    "transcript": "Scammer: Hello, am I speaking with Ramesh Kumar?\nScammer: Sir, your KYC verification has expired and your account will be frozen within 24 hours.\nVictim: What? I don't remember any KYC expiry.\nScammer: Yes sir, RBI has made new rules. You need to update immediately or your account will be blocked.\nVictim: Okay, what do I need to do?\nScammer: Sir, I will send you a link. You need to fill in your account details, ATM card number, CVV, and OTP that you will receive.\nVictim: Why do you need my ATM details?\nScammer: Sir, this is for verification purpose only. RBI mandate hai. Your account will be unblocked immediately.\nVictim: I am not comfortable sharing this.\nScammer: Sir, this is very urgent. If you don't do this now, your account will be permanently frozen and legal action will be taken.",
+    "scam_type": "KYC Verification Fraud",
+    "indicators": [
+      "urgent_kyc",
+      "account_freeze_threat",
+      "request_sensitive_info",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "ICICI Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_046",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Arun Nair?\nVictim: Yes.\nCaller: Sir, this is your cab driver. I have reached your pickup location.\nVictim: Okay, I am coming down in 2 minutes.\nCaller: Sure sir, I am waiting. White Swift, number DL 01 AB 1234.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_030",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Arun Nair?\nVictim: Yes.\nCaller: Sir, this is your cab driver. I have reached your pickup location.\nVictim: Okay, I am coming down in 2 minutes.\nCaller: Sure sir, I am waiting. White Swift, number DL 01 AB 1234.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_025",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, am I speaking with Rajesh Gupta?\nVictim: Yes, tell me.\nCaller: Sir, this is Dr. Sharma's clinic. Your appointment is confirmed for tomorrow at 3 PM.\nVictim: Okay, I will be there.\nCaller: Thank you sir. Please bring your previous reports.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_police_026",
+    "label": "scam",
+    "category": "police_impersonation",
+    "transcript": "Scammer: Am I speaking with Sunita Verma?\nVictim: Yes, tell me.\nScammer: Sir, this is Sub-Inspector Kumar from Delhi Police Narcotics Cell. Your mobile number has been linked to a drug trafficking case.\nVictim: What nonsense! I am a common man.\nScammer: Sir, we have evidence. Your number was used to coordinate drug deals. CBI is also involved now.\nVictim: This must be some mistake.\nScammer: Sir, we are sending a team to arrest you. But if you want to settle this matter quietly, you can pay a penalty.\nVictim: What penalty?\nScammer: 5 lakh rupees. Pay through Google Pay to this number and we will close the case. Otherwise, you will be in jail tonight.",
+    "scam_type": "Police/Authority Impersonation",
+    "indicators": [
+      "impersonation",
+      "arrest_threat",
+      "drug_case",
+      "demand_money",
+      "urgent"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "scam_tech_022",
+    "label": "scam",
+    "category": "tech_support",
+    "transcript": "Scammer: Hello sir, this is calling from Airtel technical department.\nVictim: Yes, tell me.\nScammer: Sir, your mobile number will be disconnected in 1 hour due to KYC issues.\nVictim: But I did my KYC recently.\nScammer: Sir, there is a problem with your documents. To avoid disconnection, you need to download a verification app.\nVictim: Which app?\nScammer: Sir, I will send you a link. Download the app and allow all permissions. It will verify your identity.\nVictim: Okay, I downloaded it.\nScammer: Good sir. Now the app needs access to your SMS to verify OTP. Allow it. Also, your screen will be shared with our server for verification.",
+    "scam_type": "Tech Support Scam",
+    "indicators": [
+      "remote_access_request",
+      "virus_threat",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "legit_000",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Manoj Joshi?\nVictim: Yes, speaking.\nCaller: Sir, this is Raj from Swiggy. Your order for biryani has been confirmed. Delivery in 30 minutes.\nVictim: Okay, thank you.\nCaller: You're welcome sir. Have a good day!",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_police_006",
+    "label": "scam",
+    "category": "police_impersonation",
+    "transcript": "Scammer: Hello, is this Manoj Joshi?\nVictim: Yes, who is this?\nScammer: This is Inspector Sharma from Mumbai Cyber Crime Branch. There is a serious matter regarding your name.\nVictim: What matter? I haven't done anything wrong.\nScammer: Sir, we have found a parcel in your name containing illegal drugs and fake passports. This is a very serious offense.\nVictim: What? I didn't send any parcel!\nScammer: Sir, the parcel was sent from Mumbai to Thailand using your Aadhaar and PAN card copies. You are the main suspect.\nVictim: This is a mistake! I am innocent!\nScammer: Sir, an arrest warrant has been issued in your name. You will be arrested within 2 hours unless you cooperate.\nVictim: Please, what should I do?\nScammer: Sir, you need to pay a security deposit of 2 lakhs to the court to stop the arrest warrant. Pay immediately through UPI.\nVictim: 2 lakhs? I don't have that much.\nScammer: Sir, this is your only chance. Pay now or go to jail for 10 years!",
+    "scam_type": "Police/Authority Impersonation",
+    "indicators": [
+      "impersonation",
+      "arrest_threat",
+      "drug_case",
+      "demand_money",
+      "urgent"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "legit_012",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, may I speak with Anita Desai?\nVictim: Yes, speaking.\nCaller: Sir, I am Rahul from your bank. You had applied for a credit card. Your application is approved.\nVictim: That's good news.\nCaller: Sir, please visit your nearest branch with ID proof and address proof to collect your card.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_bank_009",
+    "label": "scam",
+    "category": "bank_fraud",
+    "transcript": "Scammer: Hello, am I speaking with Arun Nair?\nVictim: Yes, who is this?\nScammer: Sir, I am calling from Union Bank fraud department. There is suspicious activity on your account.\nVictim: What kind of activity?\nScammer: Sir, someone tried to withdraw 1 lakh rupees from your account using net banking. The transaction was blocked.\nVictim: Thank god! What should I do?\nScammer: Sir, to secure your account, I need to verify your details. Please tell me your debit card number and expiry date.\nVictim: Why do you need that?\nScammer: Sir, this is to verify you are the real account holder. Also, you will receive an OTP - tell me that as well.\nVictim: I am not comfortable sharing OTP.\nScammer: Sir, if you don't verify now, the hackers will try again and your money will be gone! This is urgent!",
+    "scam_type": "Bank Fraud Scam",
+    "indicators": [
+      "suspicious_activity",
+      "request_otp",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Union Bank"
+      ]
+    }
+  },
+  {
+    "id": "scam_police_031",
+    "label": "scam",
+    "category": "police_impersonation",
+    "transcript": "Scammer: Am I speaking with Sanjay Khanna?\nVictim: Yes, tell me.\nScammer: Sir, this is Sub-Inspector Kumar from Delhi Police Narcotics Cell. Your mobile number has been linked to a drug trafficking case.\nVictim: What nonsense! I am a common man.\nScammer: Sir, we have evidence. Your number was used to coordinate drug deals. CBI is also involved now.\nVictim: This must be some mistake.\nScammer: Sir, we are sending a team to arrest you. But if you want to settle this matter quietly, you can pay a penalty.\nVictim: What penalty?\nScammer: 5 lakh rupees. Pay through Google Pay to this number and we will close the case. Otherwise, you will be in jail tonight.",
+    "scam_type": "Police/Authority Impersonation",
+    "indicators": [
+      "impersonation",
+      "arrest_threat",
+      "drug_case",
+      "demand_money",
+      "urgent"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "legit_027",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is calling from Airtel.\nVictim: Yes, tell me.\nCaller: Sir, your postpaid bill of 899 rupees is due. Please pay by 5th of this month to avoid late charges.\nVictim: Okay, I will pay today.\nCaller: Thank you sir. You can pay through Airtel Thanks app or any UPI app.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_bank_039",
+    "label": "scam",
+    "category": "bank_fraud",
+    "transcript": "Scammer: Hello, am I speaking with Sunita Verma?\nVictim: Yes, who is this?\nScammer: Sir, I am calling from Punjab National Bank fraud department. There is suspicious activity on your account.\nVictim: What kind of activity?\nScammer: Sir, someone tried to withdraw 1 lakh rupees from your account using net banking. The transaction was blocked.\nVictim: Thank god! What should I do?\nScammer: Sir, to secure your account, I need to verify your details. Please tell me your debit card number and expiry date.\nVictim: Why do you need that?\nScammer: Sir, this is to verify you are the real account holder. Also, you will receive an OTP - tell me that as well.\nVictim: I am not comfortable sharing OTP.\nScammer: Sir, if you don't verify now, the hackers will try again and your money will be gone! This is urgent!",
+    "scam_type": "Bank Fraud Scam",
+    "indicators": [
+      "suspicious_activity",
+      "request_otp",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Punjab National Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_032",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Lakshmi Iyer?\nVictim: Yes, speaking.\nCaller: Sir, this is Raj from Swiggy. Your order for biryani has been confirmed. Delivery in 30 minutes.\nVictim: Okay, thank you.\nCaller: You're welcome sir. Have a good day!",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_police_016",
+    "label": "scam",
+    "category": "police_impersonation",
+    "transcript": "Scammer: Am I speaking with Kiran Rao?\nVictim: Yes, tell me.\nScammer: Sir, this is Sub-Inspector Kumar from Delhi Police Narcotics Cell. Your mobile number has been linked to a drug trafficking case.\nVictim: What nonsense! I am a common man.\nScammer: Sir, we have evidence. Your number was used to coordinate drug deals. CBI is also involved now.\nVictim: This must be some mistake.\nScammer: Sir, we are sending a team to arrest you. But if you want to settle this matter quietly, you can pay a penalty.\nVictim: What penalty?\nScammer: 5 lakh rupees. Pay through Google Pay to this number and we will close the case. Otherwise, you will be in jail tonight.",
+    "scam_type": "Police/Authority Impersonation",
+    "indicators": [
+      "impersonation",
+      "arrest_threat",
+      "drug_case",
+      "demand_money",
+      "urgent"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "legit_004",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, may I speak with Geeta Menon?\nVictim: Yes, speaking.\nCaller: Sir, I am Rahul from your bank. You had applied for a credit card. Your application is approved.\nVictim: That's good news.\nCaller: Sir, please visit your nearest branch with ID proof and address proof to collect your card.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_lottery_043",
+    "label": "scam",
+    "category": "lottery_scam",
+    "transcript": "Scammer: Hello, congratulations from Amazon India!\nVictim: What is this about?\nScammer: Sir, you have won an iPhone 15 Pro Max in our customer appreciation lucky draw!\nVictim: I didn't enter any draw.\nScammer: Sir, as a regular Amazon customer, you were automatically entered. You are one of 10 lucky winners!\nVictim: Great! When will I get it?\nScammer: Sir, to process your prize, we need a refundable security deposit of 5,000 rupees. This will be returned with your prize.\nVictim: Okay, how do I pay?\nScammer: Sir, pay to amazonprizes@ybl through PhonePe or Google Pay. Send screenshot after payment.",
+    "scam_type": "Lottery/Prize Scam",
+    "indicators": [
+      "prize_offer",
+      "processing_fee",
+      "urgent",
+      "too_good_to_be_true"
+    ],
+    "entities": {
+      "upi_ids": [
+        "kbcprize@paytm",
+        "amazonprizes@ybl"
+      ]
+    }
+  },
+  {
+    "id": "scam_lottery_003",
+    "label": "scam",
+    "category": "lottery_scam",
+    "transcript": "Scammer: Hello, congratulations from Amazon India!\nVictim: What is this about?\nScammer: Sir, you have won an iPhone 15 Pro Max in our customer appreciation lucky draw!\nVictim: I didn't enter any draw.\nScammer: Sir, as a regular Amazon customer, you were automatically entered. You are one of 10 lucky winners!\nVictim: Great! When will I get it?\nScammer: Sir, to process your prize, we need a refundable security deposit of 5,000 rupees. This will be returned with your prize.\nVictim: Okay, how do I pay?\nScammer: Sir, pay to amazonprizes@ybl through PhonePe or Google Pay. Send screenshot after payment.",
+    "scam_type": "Lottery/Prize Scam",
+    "indicators": [
+      "prize_offer",
+      "processing_fee",
+      "urgent",
+      "too_good_to_be_true"
+    ],
+    "entities": {
+      "upi_ids": [
+        "kbcprize@paytm",
+        "amazonprizes@ybl"
+      ]
+    }
+  },
+  {
+    "id": "legit_006",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Sunita Verma?\nVictim: Yes.\nCaller: Sir, this is your cab driver. I have reached your pickup location.\nVictim: Okay, I am coming down in 2 minutes.\nCaller: Sure sir, I am waiting. White Swift, number DL 01 AB 1234.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_018",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi, is this Ramesh Kumar?\nVictim: Yes, who is this?\nCaller: Sir, this is Amit from Amazon. Your order for the mobile phone has been shipped. Tracking ID is 123456789.\nVictim: Okay, when will it arrive?\nCaller: Expected delivery is day after tomorrow. You'll receive updates via SMS.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_042",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi, is this Pooja Shah?\nVictim: Yes, who is this?\nCaller: Sir, this is Amit from Amazon. Your order for the mobile phone has been shipped. Tracking ID is 123456789.\nVictim: Okay, when will it arrive?\nCaller: Expected delivery is day after tomorrow. You'll receive updates via SMS.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_kyc_010",
+    "label": "scam",
+    "category": "kyc_fraud",
+    "transcript": "Scammer: Good morning sir, this is Pooja calling from Kotak Mahindra Bank head office.\nScammer: Sir, your KYC verification has expired and your account will be frozen within 24 hours.\nVictim: What? I don't remember any KYC expiry.\nScammer: Yes sir, RBI has made new rules. You need to update immediately or your account will be blocked.\nVictim: Okay, what do I need to do?\nScammer: Sir, I will send you a link. You need to fill in your account details, ATM card number, CVV, and OTP that you will receive.\nVictim: Why do you need my ATM details?\nScammer: Sir, this is for verification purpose only. RBI mandate hai. Your account will be unblocked immediately.\nVictim: I am not comfortable sharing this.\nScammer: Sir, this is very urgent. If you don't do this now, your account will be permanently frozen and legal action will be taken.",
+    "scam_type": "KYC Verification Fraud",
+    "indicators": [
+      "urgent_kyc",
+      "account_freeze_threat",
+      "request_sensitive_info",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Kotak Mahindra Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_041",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, am I speaking with Geeta Menon?\nVictim: Yes, tell me.\nCaller: Sir, this is Dr. Sharma's clinic. Your appointment is confirmed for tomorrow at 3 PM.\nVictim: Okay, I will be there.\nCaller: Thank you sir. Please bring your previous reports.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_038",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Kiran Rao?\nVictim: Yes.\nCaller: Sir, this is your cab driver. I have reached your pickup location.\nVictim: Okay, I am coming down in 2 minutes.\nCaller: Sure sir, I am waiting. White Swift, number DL 01 AB 1234.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_kyc_020",
+    "label": "scam",
+    "category": "kyc_fraud",
+    "transcript": "Scammer: Hello, am I speaking with Deepak Mishra?\nScammer: Sir, your KYC verification has expired and your account will be frozen within 24 hours.\nVictim: What? I don't remember any KYC expiry.\nScammer: Yes sir, RBI has made new rules. You need to update immediately or your account will be blocked.\nVictim: Okay, what do I need to do?\nScammer: Sir, I will send you a link. You need to fill in your account details, ATM card number, CVV, and OTP that you will receive.\nVictim: Why do you need my ATM details?\nScammer: Sir, this is for verification purpose only. RBI mandate hai. Your account will be unblocked immediately.\nVictim: I am not comfortable sharing this.\nScammer: Sir, this is very urgent. If you don't do this now, your account will be permanently frozen and legal action will be taken.",
+    "scam_type": "KYC Verification Fraud",
+    "indicators": [
+      "urgent_kyc",
+      "account_freeze_threat",
+      "request_sensitive_info",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Punjab National Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_024",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Amit Sharma?\nVictim: Yes, speaking.\nCaller: Sir, this is Raj from Swiggy. Your order for biryani has been confirmed. Delivery in 30 minutes.\nVictim: Okay, thank you.\nCaller: You're welcome sir. Have a good day!",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_lottery_048",
+    "label": "scam",
+    "category": "lottery_scam",
+    "transcript": "Scammer: Hello, congratulations from Amazon India!\nVictim: What is this about?\nScammer: Sir, you have won an iPhone 15 Pro Max in our customer appreciation lucky draw!\nVictim: I didn't enter any draw.\nScammer: Sir, as a regular Amazon customer, you were automatically entered. You are one of 10 lucky winners!\nVictim: Great! When will I get it?\nScammer: Sir, to process your prize, we need a refundable security deposit of 5,000 rupees. This will be returned with your prize.\nVictim: Okay, how do I pay?\nScammer: Sir, pay to amazonprizes@ybl through PhonePe or Google Pay. Send screenshot after payment.",
+    "scam_type": "Lottery/Prize Scam",
+    "indicators": [
+      "prize_offer",
+      "processing_fee",
+      "urgent",
+      "too_good_to_be_true"
+    ],
+    "entities": {
+      "upi_ids": [
+        "kbcprize@paytm",
+        "amazonprizes@ybl"
+      ]
+    }
+  },
+  {
+    "id": "scam_police_001",
+    "label": "scam",
+    "category": "police_impersonation",
+    "transcript": "Scammer: Hello, is this Anita Desai?\nVictim: Yes, who is this?\nScammer: This is Inspector Sharma from Mumbai Cyber Crime Branch. There is a serious matter regarding your name.\nVictim: What matter? I haven't done anything wrong.\nScammer: Sir, we have found a parcel in your name containing illegal drugs and fake passports. This is a very serious offense.\nVictim: What? I didn't send any parcel!\nScammer: Sir, the parcel was sent from Mumbai to Thailand using your Aadhaar and PAN card copies. You are the main suspect.\nVictim: This is a mistake! I am innocent!\nScammer: Sir, an arrest warrant has been issued in your name. You will be arrested within 2 hours unless you cooperate.\nVictim: Please, what should I do?\nScammer: Sir, you need to pay a security deposit of 2 lakhs to the court to stop the arrest warrant. Pay immediately through UPI.\nVictim: 2 lakhs? I don't have that much.\nScammer: Sir, this is your only chance. Pay now or go to jail for 10 years!",
+    "scam_type": "Police/Authority Impersonation",
+    "indicators": [
+      "impersonation",
+      "arrest_threat",
+      "drug_case",
+      "demand_money",
+      "urgent"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "scam_bank_019",
+    "label": "scam",
+    "category": "bank_fraud",
+    "transcript": "Scammer: Hello, am I speaking with Sunita Verma?\nVictim: Yes, who is this?\nScammer: Sir, I am calling from Axis Bank fraud department. There is suspicious activity on your account.\nVictim: What kind of activity?\nScammer: Sir, someone tried to withdraw 1 lakh rupees from your account using net banking. The transaction was blocked.\nVictim: Thank god! What should I do?\nScammer: Sir, to secure your account, I need to verify your details. Please tell me your debit card number and expiry date.\nVictim: Why do you need that?\nScammer: Sir, this is to verify you are the real account holder. Also, you will receive an OTP - tell me that as well.\nVictim: I am not comfortable sharing OTP.\nScammer: Sir, if you don't verify now, the hackers will try again and your money will be gone! This is urgent!",
+    "scam_type": "Bank Fraud Scam",
+    "indicators": [
+      "suspicious_activity",
+      "request_otp",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Axis Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_033",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, am I speaking with Geeta Menon?\nVictim: Yes, tell me.\nCaller: Sir, this is Dr. Sharma's clinic. Your appointment is confirmed for tomorrow at 3 PM.\nVictim: Okay, I will be there.\nCaller: Thank you sir. Please bring your previous reports.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_lottery_013",
+    "label": "scam",
+    "category": "lottery_scam",
+    "transcript": "Scammer: Congratulations! Am I speaking with Suresh Patel?\nVictim: Yes, who is this?\nScammer: Sir, I am calling from Kaun Banega Crorepati head office. You have won 25 lakh rupees in lucky draw!\nVictim: Really? I didn't participate in any draw.\nScammer: Sir, your mobile number was randomly selected from all Airtel users. This is your lucky day!\nVictim: That's amazing! How do I claim?\nScammer: Sir, to claim your prize, you need to pay a processing fee of 15,000 rupees first.\nVictim: Why do I need to pay?\nScammer: Sir, this is for GST and transfer charges. Once paid, the 25 lakhs will be transferred to your account within 2 hours.\nVictim: Okay, where should I send?\nScammer: Sir, send through UPI to this ID: kbcprize@paytm. Hurry, offer expires today!",
+    "scam_type": "Lottery/Prize Scam",
+    "indicators": [
+      "prize_offer",
+      "processing_fee",
+      "urgent",
+      "too_good_to_be_true"
+    ],
+    "entities": {
+      "upi_ids": [
+        "kbcprize@paytm",
+        "amazonprizes@ybl"
+      ]
+    }
+  },
+  {
+    "id": "legit_040",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Lakshmi Iyer?\nVictim: Yes, speaking.\nCaller: Sir, this is Raj from Swiggy. Your order for biryani has been confirmed. Delivery in 30 minutes.\nVictim: Okay, thank you.\nCaller: You're welcome sir. Have a good day!",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_police_046",
+    "label": "scam",
+    "category": "police_impersonation",
+    "transcript": "Scammer: Am I speaking with Geeta Menon?\nVictim: Yes, tell me.\nScammer: Sir, this is Sub-Inspector Kumar from Delhi Police Narcotics Cell. Your mobile number has been linked to a drug trafficking case.\nVictim: What nonsense! I am a common man.\nScammer: Sir, we have evidence. Your number was used to coordinate drug deals. CBI is also involved now.\nVictim: This must be some mistake.\nScammer: Sir, we are sending a team to arrest you. But if you want to settle this matter quietly, you can pay a penalty.\nVictim: What penalty?\nScammer: 5 lakh rupees. Pay through Google Pay to this number and we will close the case. Otherwise, you will be in jail tonight.",
+    "scam_type": "Police/Authority Impersonation",
+    "indicators": [
+      "impersonation",
+      "arrest_threat",
+      "drug_case",
+      "demand_money",
+      "urgent"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "scam_tech_032",
+    "label": "scam",
+    "category": "tech_support",
+    "transcript": "Scammer: Hello, this is Microsoft Technical Support. Am I speaking with Ramesh Kumar?\nVictim: Yes, what is this about?\nScammer: Sir, we have detected a virus on your computer that is stealing your banking information.\nVictim: Oh no! How did this happen?\nScammer: Sir, hackers have accessed your system. We need to fix this immediately or you will lose all your money.\nVictim: Please help me!\nScammer: Sir, I need you to install AnyDesk so I can access your computer and remove the virus.\nVictim: Okay, I will install it.\nScammer: Good. Once installed, give me the access code. Also, keep your ATM card ready for verification.\nVictim: Why do you need my ATM card?\nScammer: Sir, this is to verify your identity with the bank. We need to make sure the virus hasn't stolen your money.",
+    "scam_type": "Tech Support Scam",
+    "indicators": [
+      "remote_access_request",
+      "virus_threat",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "scam_bank_044",
+    "label": "scam",
+    "category": "bank_fraud",
+    "transcript": "Scammer: Hello, am I speaking with Anita Desai?\nVictim: Yes, who is this?\nScammer: Sir, I am calling from IndusInd Bank fraud department. There is suspicious activity on your account.\nVictim: What kind of activity?\nScammer: Sir, someone tried to withdraw 1 lakh rupees from your account using net banking. The transaction was blocked.\nVictim: Thank god! What should I do?\nScammer: Sir, to secure your account, I need to verify your details. Please tell me your debit card number and expiry date.\nVictim: Why do you need that?\nScammer: Sir, this is to verify you are the real account holder. Also, you will receive an OTP - tell me that as well.\nVictim: I am not comfortable sharing OTP.\nScammer: Sir, if you don't verify now, the hackers will try again and your money will be gone! This is urgent!",
+    "scam_type": "Bank Fraud Scam",
+    "indicators": [
+      "suspicious_activity",
+      "request_otp",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "IndusInd Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_047",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is Vijay from Urban Company.\nVictim: Yes, tell me.\nCaller: Sir, your AC service appointment is confirmed for tomorrow between 2-4 PM.\nVictim: Okay, please come on time.\nCaller: Sure sir. Our technician will call you 30 minutes before arrival.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_police_036",
+    "label": "scam",
+    "category": "police_impersonation",
+    "transcript": "Scammer: Hello, is this Rajesh Gupta?\nVictim: Yes, who is this?\nScammer: This is Inspector Sharma from Mumbai Cyber Crime Branch. There is a serious matter regarding your name.\nVictim: What matter? I haven't done anything wrong.\nScammer: Sir, we have found a parcel in your name containing illegal drugs and fake passports. This is a very serious offense.\nVictim: What? I didn't send any parcel!\nScammer: Sir, the parcel was sent from Mumbai to Thailand using your Aadhaar and PAN card copies. You are the main suspect.\nVictim: This is a mistake! I am innocent!\nScammer: Sir, an arrest warrant has been issued in your name. You will be arrested within 2 hours unless you cooperate.\nVictim: Please, what should I do?\nScammer: Sir, you need to pay a security deposit of 2 lakhs to the court to stop the arrest warrant. Pay immediately through UPI.\nVictim: 2 lakhs? I don't have that much.\nScammer: Sir, this is your only chance. Pay now or go to jail for 10 years!",
+    "scam_type": "Police/Authority Impersonation",
+    "indicators": [
+      "impersonation",
+      "arrest_threat",
+      "drug_case",
+      "demand_money",
+      "urgent"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "legit_015",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is Vijay from Urban Company.\nVictim: Yes, tell me.\nCaller: Sir, your AC service appointment is confirmed for tomorrow between 2-4 PM.\nVictim: Okay, please come on time.\nCaller: Sure sir. Our technician will call you 30 minutes before arrival.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_026",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi, is this Lakshmi Iyer?\nVictim: Yes, who is this?\nCaller: Sir, this is Amit from Amazon. Your order for the mobile phone has been shipped. Tracking ID is 123456789.\nVictim: Okay, when will it arrive?\nCaller: Expected delivery is day after tomorrow. You'll receive updates via SMS.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_bank_004",
+    "label": "scam",
+    "category": "bank_fraud",
+    "transcript": "Scammer: Sir, this is Axis Bank customer care. Your account has been flagged for unusual transactions.\nVictim: What transactions?\nScammer: Sir, 50,000 rupees was transferred to an unknown account 10 minutes ago. Did you authorize this?\nVictim: No! I didn't do any transfer!\nScammer: Sir, then this is fraud. To reverse the transaction, I need your UPI PIN and the OTP you will receive.\nVictim: You need my UPI PIN?\nScammer: Yes sir, this is to verify the reversal request. Without this, we cannot get your money back. Hurry, before it's too late!",
+    "scam_type": "Bank Fraud Scam",
+    "indicators": [
+      "suspicious_activity",
+      "request_otp",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Axis Bank"
+      ]
+    }
+  },
+  {
+    "id": "scam_tech_012",
+    "label": "scam",
+    "category": "tech_support",
+    "transcript": "Scammer: Hello, this is Microsoft Technical Support. Am I speaking with Manoj Joshi?\nVictim: Yes, what is this about?\nScammer: Sir, we have detected a virus on your computer that is stealing your banking information.\nVictim: Oh no! How did this happen?\nScammer: Sir, hackers have accessed your system. We need to fix this immediately or you will lose all your money.\nVictim: Please help me!\nScammer: Sir, I need you to install AnyDesk so I can access your computer and remove the virus.\nVictim: Okay, I will install it.\nScammer: Good. Once installed, give me the access code. Also, keep your ATM card ready for verification.\nVictim: Why do you need my ATM card?\nScammer: Sir, this is to verify your identity with the bank. We need to make sure the virus hasn't stolen your money.",
+    "scam_type": "Tech Support Scam",
+    "indicators": [
+      "remote_access_request",
+      "virus_threat",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "scam_tech_007",
+    "label": "scam",
+    "category": "tech_support",
+    "transcript": "Scammer: Hello sir, this is calling from Airtel technical department.\nVictim: Yes, tell me.\nScammer: Sir, your mobile number will be disconnected in 1 hour due to KYC issues.\nVictim: But I did my KYC recently.\nScammer: Sir, there is a problem with your documents. To avoid disconnection, you need to download a verification app.\nVictim: Which app?\nScammer: Sir, I will send you a link. Download the app and allow all permissions. It will verify your identity.\nVictim: Okay, I downloaded it.\nScammer: Good sir. Now the app needs access to your SMS to verify OTP. Allow it. Also, your screen will be shared with our server for verification.",
+    "scam_type": "Tech Support Scam",
+    "indicators": [
+      "remote_access_request",
+      "virus_threat",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "legit_044",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, may I speak with Pooja Shah?\nVictim: Yes, speaking.\nCaller: Sir, I am Rahul from your bank. You had applied for a credit card. Your application is approved.\nVictim: That's good news.\nCaller: Sir, please visit your nearest branch with ID proof and address proof to collect your card.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_043",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is calling from Airtel.\nVictim: Yes, tell me.\nCaller: Sir, your postpaid bill of 899 rupees is due. Please pay by 5th of this month to avoid late charges.\nVictim: Okay, I will pay today.\nCaller: Thank you sir. You can pay through Airtel Thanks app or any UPI app.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_014",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, is this Manoj Joshi?\nVictim: Yes.\nCaller: Sir, this is your cab driver. I have reached your pickup location.\nVictim: Okay, I am coming down in 2 minutes.\nCaller: Sure sir, I am waiting. White Swift, number DL 01 AB 1234.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_020",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, may I speak with Suresh Patel?\nVictim: Yes, speaking.\nCaller: Sir, I am Rahul from your bank. You had applied for a credit card. Your application is approved.\nVictim: That's good news.\nCaller: Sir, please visit your nearest branch with ID proof and address proof to collect your card.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_036",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, may I speak with Sunita Verma?\nVictim: Yes, speaking.\nCaller: Sir, I am Rahul from your bank. You had applied for a credit card. Your application is approved.\nVictim: That's good news.\nCaller: Sir, please visit your nearest branch with ID proof and address proof to collect your card.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_lottery_023",
+    "label": "scam",
+    "category": "lottery_scam",
+    "transcript": "Scammer: Hello, congratulations from Amazon India!\nVictim: What is this about?\nScammer: Sir, you have won an iPhone 15 Pro Max in our customer appreciation lucky draw!\nVictim: I didn't enter any draw.\nScammer: Sir, as a regular Amazon customer, you were automatically entered. You are one of 10 lucky winners!\nVictim: Great! When will I get it?\nScammer: Sir, to process your prize, we need a refundable security deposit of 5,000 rupees. This will be returned with your prize.\nVictim: Okay, how do I pay?\nScammer: Sir, pay to amazonprizes@ybl through PhonePe or Google Pay. Send screenshot after payment.",
+    "scam_type": "Lottery/Prize Scam",
+    "indicators": [
+      "prize_offer",
+      "processing_fee",
+      "urgent",
+      "too_good_to_be_true"
+    ],
+    "entities": {
+      "upi_ids": [
+        "kbcprize@paytm",
+        "amazonprizes@ybl"
+      ]
+    }
+  },
+  {
+    "id": "scam_bank_034",
+    "label": "scam",
+    "category": "bank_fraud",
+    "transcript": "Scammer: Hello, am I speaking with Pooja Shah?\nVictim: Yes, who is this?\nScammer: Sir, I am calling from IndusInd Bank fraud department. There is suspicious activity on your account.\nVictim: What kind of activity?\nScammer: Sir, someone tried to withdraw 1 lakh rupees from your account using net banking. The transaction was blocked.\nVictim: Thank god! What should I do?\nScammer: Sir, to secure your account, I need to verify your details. Please tell me your debit card number and expiry date.\nVictim: Why do you need that?\nScammer: Sir, this is to verify you are the real account holder. Also, you will receive an OTP - tell me that as well.\nVictim: I am not comfortable sharing OTP.\nScammer: Sir, if you don't verify now, the hackers will try again and your money will be gone! This is urgent!",
+    "scam_type": "Bank Fraud Scam",
+    "indicators": [
+      "suspicious_activity",
+      "request_otp",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "IndusInd Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_028",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, may I speak with Geeta Menon?\nVictim: Yes, speaking.\nCaller: Sir, I am Rahul from your bank. You had applied for a credit card. Your application is approved.\nVictim: That's good news.\nCaller: Sir, please visit your nearest branch with ID proof and address proof to collect your card.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_019",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is calling from Airtel.\nVictim: Yes, tell me.\nCaller: Sir, your postpaid bill of 899 rupees is due. Please pay by 5th of this month to avoid late charges.\nVictim: Okay, I will pay today.\nCaller: Thank you sir. You can pay through Airtel Thanks app or any UPI app.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_035",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is calling from Airtel.\nVictim: Yes, tell me.\nCaller: Sir, your postpaid bill of 899 rupees is due. Please pay by 5th of this month to avoid late charges.\nVictim: Okay, I will pay today.\nCaller: Thank you sir. You can pay through Airtel Thanks app or any UPI app.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_police_021",
+    "label": "scam",
+    "category": "police_impersonation",
+    "transcript": "Scammer: Am I speaking with Ramesh Kumar?\nVictim: Yes, tell me.\nScammer: Sir, this is Sub-Inspector Kumar from Delhi Police Narcotics Cell. Your mobile number has been linked to a drug trafficking case.\nVictim: What nonsense! I am a common man.\nScammer: Sir, we have evidence. Your number was used to coordinate drug deals. CBI is also involved now.\nVictim: This must be some mistake.\nScammer: Sir, we are sending a team to arrest you. But if you want to settle this matter quietly, you can pay a penalty.\nVictim: What penalty?\nScammer: 5 lakh rupees. Pay through Google Pay to this number and we will close the case. Otherwise, you will be in jail tonight.",
+    "scam_type": "Police/Authority Impersonation",
+    "indicators": [
+      "impersonation",
+      "arrest_threat",
+      "drug_case",
+      "demand_money",
+      "urgent"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "scam_tech_047",
+    "label": "scam",
+    "category": "tech_support",
+    "transcript": "Scammer: Hello, this is Microsoft Technical Support. Am I speaking with Pooja Shah?\nVictim: Yes, what is this about?\nScammer: Sir, we have detected a virus on your computer that is stealing your banking information.\nVictim: Oh no! How did this happen?\nScammer: Sir, hackers have accessed your system. We need to fix this immediately or you will lose all your money.\nVictim: Please help me!\nScammer: Sir, I need you to install AnyDesk so I can access your computer and remove the virus.\nVictim: Okay, I will install it.\nScammer: Good. Once installed, give me the access code. Also, keep your ATM card ready for verification.\nVictim: Why do you need my ATM card?\nScammer: Sir, this is to verify your identity with the bank. We need to make sure the virus hasn't stolen your money.",
+    "scam_type": "Tech Support Scam",
+    "indicators": [
+      "remote_access_request",
+      "virus_threat",
+      "urgent",
+      "impersonation"
+    ],
+    "entities": {}
+  },
+  {
+    "id": "scam_kyc_005",
+    "label": "scam",
+    "category": "kyc_fraud",
+    "transcript": "Scammer: Hello, is this Amit Sharma?\nVictim: Yes, speaking.\nScammer: Sir, I am calling from RBI cyber security department. There are suspicious transactions from your account.\nVictim: What transactions? I didn't do anything.\nScammer: Sir, someone is trying to transfer 50,000 rupees from your account. To stop this, you need to verify your identity immediately.\nVictim: How do I verify?\nScammer: Sir, please tell me your account number and ATM PIN so I can block the transaction.\nVictim: You want my PIN? That's not right.\nScammer: Sir, I am from RBI. This is official procedure. Give me quickly before money is gone!",
+    "scam_type": "KYC Verification Fraud",
+    "indicators": [
+      "urgent_kyc",
+      "account_freeze_threat",
+      "request_sensitive_info",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "HDFC Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_029",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hi Sunita Verma, this is Priya from your child's school.\nVictim: Yes, tell me.\nCaller: Sir, just reminding you that parent-teacher meeting is on Saturday at 10 AM.\nVictim: Okay, I will be there.\nCaller: Thank you sir.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "scam_lottery_018",
+    "label": "scam",
+    "category": "lottery_scam",
+    "transcript": "Scammer: Hello, congratulations from Amazon India!\nVictim: What is this about?\nScammer: Sir, you have won an iPhone 15 Pro Max in our customer appreciation lucky draw!\nVictim: I didn't enter any draw.\nScammer: Sir, as a regular Amazon customer, you were automatically entered. You are one of 10 lucky winners!\nVictim: Great! When will I get it?\nScammer: Sir, to process your prize, we need a refundable security deposit of 5,000 rupees. This will be returned with your prize.\nVictim: Okay, how do I pay?\nScammer: Sir, pay to amazonprizes@ybl through PhonePe or Google Pay. Send screenshot after payment.",
+    "scam_type": "Lottery/Prize Scam",
+    "indicators": [
+      "prize_offer",
+      "processing_fee",
+      "urgent",
+      "too_good_to_be_true"
+    ],
+    "entities": {
+      "upi_ids": [
+        "kbcprize@paytm",
+        "amazonprizes@ybl"
+      ]
+    }
+  },
+  {
+    "id": "scam_kyc_000",
+    "label": "scam",
+    "category": "kyc_fraud",
+    "transcript": "Scammer: Sir, this is an urgent call regarding your Punjab National Bank account.\nScammer: Sir, your KYC verification has expired and your account will be frozen within 24 hours.\nVictim: What? I don't remember any KYC expiry.\nScammer: Yes sir, RBI has made new rules. You need to update immediately or your account will be blocked.\nVictim: Okay, what do I need to do?\nScammer: Sir, I will send you a link. You need to fill in your account details, ATM card number, CVV, and OTP that you will receive.\nVictim: Why do you need my ATM details?\nScammer: Sir, this is for verification purpose only. RBI mandate hai. Your account will be unblocked immediately.\nVictim: I am not comfortable sharing this.\nScammer: Sir, this is very urgent. If you don't do this now, your account will be permanently frozen and legal action will be taken.",
+    "scam_type": "KYC Verification Fraud",
+    "indicators": [
+      "urgent_kyc",
+      "account_freeze_threat",
+      "request_sensitive_info",
+      "impersonation"
+    ],
+    "entities": {
+      "bank_names": [
+        "Punjab National Bank"
+      ]
+    }
+  },
+  {
+    "id": "legit_039",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is Vijay from Urban Company.\nVictim: Yes, tell me.\nCaller: Sir, your AC service appointment is confirmed for tomorrow between 2-4 PM.\nVictim: Okay, please come on time.\nCaller: Sure sir. Our technician will call you 30 minutes before arrival.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_023",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello sir, this is Vijay from Urban Company.\nVictim: Yes, tell me.\nCaller: Sir, your AC service appointment is confirmed for tomorrow between 2-4 PM.\nVictim: Okay, please come on time.\nCaller: Sure sir. Our technician will call you 30 minutes before arrival.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  },
+  {
+    "id": "legit_017",
+    "label": "legitimate",
+    "category": "normal_call",
+    "transcript": "Caller: Hello, am I speaking with Manoj Joshi?\nVictim: Yes, tell me.\nCaller: Sir, this is Dr. Sharma's clinic. Your appointment is confirmed for tomorrow at 3 PM.\nVictim: Okay, I will be there.\nCaller: Thank you sir. Please bring your previous reports.",
+    "scam_type": null,
+    "indicators": [],
+    "entities": {}
+  }
+]
