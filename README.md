@@ -1,7 +1,7 @@
-# 🛡️ RakshakAI - AI-Powered Real-Time Scam Call Defense System
+# RakshakAI - AI-Powered Real-Time Scam Call Defense System
 
 <p align="center">
-  <img src="docs/images/logo.png" alt="RakshakAI Logo" width="200"/>
+  <img src="images/logo.png" alt="RakshakAI Logo" width="200"/>
 </p>
 
 <p align="center">
@@ -21,17 +21,17 @@
 
 **RakshakAI** (रक्षक AI = "Protector AI" in Sanskrit) is a comprehensive, production-ready scam call defense system that doesn't just **detect** fraudulent calls—it **fights back** by deploying conversational AI agents to waste scammers' time while extracting valuable intelligence for law enforcement.
 
-### 🎯 Hackathon-Winning Features
+### 🎯 Our Features
 
-| Feature | Description | Status |
-|---------|-------------|--------|
-| 🎯 **Real-Time Detection** | ML + Gemini API threat analysis in <300ms | ✅ |
-| 🤖 **AI Bait Agent** | "Confused Senior" persona wastes scammer time | ✅ |
-| 📞 **Auto Call Recorder** | Automatic recording for legal evidence | ✅ |
-| 🔍 **OSINT Tools** | Phone/UPI investigation & network analysis | ✅ |
-| 📊 **Interactive Dashboard** | Real-time visualization with Streamlit | ✅ |
-| 🆓 **100% FREE** | Uses FREE Gemini API - no paid services | ✅ |
-| 🚔 **Law Enforcement** | Evidence packaging with chain of custody | ✅ |
+| Feature | Description |
+|---------|-------------|
+| 🎯 **Real-Time Detection** | ML + Gemini API threat analysis in <300ms |
+| 🤖 **AI Bait Agent** | "Confused Senior" persona wastes scammer time |
+| 📞 **Auto Call Recorder** | Automatic recording for legal evidence |
+| 🔍 **OSINT Tools** | Phone/UPI investigation & network analysis |
+| 📊 **Interactive Dashboard** | Real-time visualization with Streamlit |
+| 🆓 **100% FREE** | Uses FREE Gemini API - no paid services |
+| 🚔 **Law Enforcement** | Evidence packaging with chain of custody |
 
 ---
 
@@ -42,10 +42,10 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/harvatechs/RakshakAI/blob/main/colab/RakshakAI_Colab.ipynb)
 
 ```bash
-# 1. Click the badge above
-# 2. Get FREE Gemini API Key: https://makersuite.google.com/app/apikey
-# 3. Run all cells
-# 4. Launch interactive dashboard
+1. Click the badge above
+2. Get FREE Gemini API Key: https://makersuite.google.com/app/apikey
+3. Run all cells
+4. Launch interactive dashboard
 ```
 
 ### Option 2: Local Installation
@@ -73,34 +73,34 @@ streamlit run gui_dashboard/app.py
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                           RAKSHAKAI SYSTEM                                   │
+│                           RAKSHAKAI SYSTEM                                  │
 ├─────────────────────────────────────────────────────────────────────────────┤
-│                                                                              │
-│  📱 MOBILE APP                    🌐 WEBSOCKET                    ⚙️ BACKEND │
+│                                                                             │
+│     MOBILE APP                      WEBSOCKET                   BACKEND     │
 │  ┌──────────────┐                ┌──────────────┐              ┌──────────┐ │
 │  │ React Native │◄──────────────►│ FastAPI      │─────────────►│ Gemini   │ │
 │  │ Call Monitor │   Audio Stream │ WebSocket    │  Analysis    │ API      │ │
 │  └──────────────┘                └──────────────┘              └──────────┘ │
-│         │                              │                              │      │
-│         │                              ▼                              ▼      │
-│         │                       ┌──────────────┐              ┌──────────┐   │
-│         │                       │ ML Classifier│              │ Bait     │   │
-│         │                       │ (94% Acc)    │              │ Agent    │   │
-│         │                       └──────────────┘              └──────────┘   │
-│         │                              │                              │      │
-│         │                              ▼                              ▼      │
-│         │                       ┌──────────────┐              ┌──────────┐   │
-│         └──────────────────────►│ PostgreSQL   │◄─────────────│ OSINT    │   │
-│                                 │ Evidence DB  │              │ Tools    │   │
-│                                 └──────────────┘              └──────────┘   │
-│                                        │                                     │
-│                                        ▼                                     │
-│  🚔 LAW ENFORCEMENT              ┌──────────────┐                           │
+│         │                              │                              │     │
+│         │                              ▼                              ▼     │
+│         │                       ┌──────────────┐              ┌──────────┐  │
+│         │                       │ ML Classifier│              │ Bait     │  │
+│         │                       │ (94% Acc)    │              │ Agent    │  │
+│         │                       └──────────────┘              └──────────┘  │
+│         │                              │                              │     │
+│         │                              ▼                              ▼     │
+│         │                       ┌──────────────┐              ┌──────────┐  │
+│         └──────────────────────►│ PostgreSQL   │◄─────────────│ OSINT    │  │
+│                                 │ Evidence DB  │              │ Tools    │  │
+│                                 └──────────────┘              └──────────┘  │
+│                                        │                                    │
+│                                        ▼                                    │
+│   LAW ENFORCEMENT                ┌──────────────┐                           │
 │  ┌──────────────┐                │ Call Recorder│                           │
 │  │ Next.js      │◄───────────────│ (Auto-start) │                           │
 │  │ Dashboard    │   Evidence     └──────────────┘                           │
-│  └──────────────┘                                                            │
-│                                                                              │
+│  └──────────────┘                                                           │
+│                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -405,7 +405,8 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 <p align="center">
   <a href="mailto:harvatechs@gmail.com">📧 Email</a> •
   <a href="https://github.com/harvatechs/RakshakAI">🐙 GitHub</a> •
-  <a href="https://twitter.com/harvatechs">🐦 Twitter</a>
+  <a href="https://twitter.com/harvatechs">𝕏 Twitter</a>
+  <a href="https://in.linkedin.com/in/techharva">ℹ️ LinkedIn</a>
 </p>
 
 ---
