@@ -1,7 +1,7 @@
 # RakshakAI - AI-Powered Real-Time Scam Call Defense System
 
 <p align="center">
-  <img src="images/logo.png" alt="RakshakAI Logo" width="200"/>
+  <img src="images/logo.png" alt="RakshakAI Logo" width="400"/>
 </p>
 
 <p align="center">
